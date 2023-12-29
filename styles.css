@@ -12,35 +12,33 @@ body {
   display: flex;
 }
 
-section.image {
+section.sofa {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   max-width: 450px;
+  position: relative;
 }
 
-button.firstButton {
+button.buttonTurn {
   border: none;
   background: none;
   width: 100%;
   position: relative;
-}
-
-.firstButton img {
-  position: absolute;
-  right: 50px;
+  cursor: pointer;
 }
 
 section.description {
-  max-width: 281px;
+  width: 280px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 12px;
+  margin: auto 70px;
 }
 
 section.description p:nth-child(1) {
@@ -60,7 +58,7 @@ section.description h1 {
   font-size: 32px;
 }
 
-section.description button {
+.description button {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #271a45;
@@ -68,5 +66,35 @@ section.description button {
   padding: 8px 16px;
   border-radius: 999px;
   margin-top: 8px;
-  border: 0.5px solid #271A45;
+  border: 0.5px solid #271a45;
+  cursor: pointer;
+}
+
+.buttonStop {
+  background: none;
+  border: none;
+  position: relative;
+  top: 30px;
+  left: 150px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.buttonTurn img {
+  position: absolute;
+  right: 50px;
+}
+
+
+.sofaTurning {
+  width: 450px;
+}
+
+.sofaStatic{
+  width: 450px;
+}
+
+.hide{
+  display: none;
 }
