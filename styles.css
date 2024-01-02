@@ -6,6 +6,7 @@
 
 body {
   background-color: #d9cdf7;
+  display: grid;
 }
 
 #app {
